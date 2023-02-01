@@ -53,6 +53,7 @@ def find_silver_token():
     Returns:
 	dist (float): distance of the closest silver token (-1 if no silver token is detected)
 	rot_y (float): angle between the robot and the silver token (-1 if no silver token is detected)
+    id (int): id of the token
     """
     dist=100
     for token in R.see():
@@ -73,6 +74,7 @@ def find_golden_token():
     Returns:
 	dist (float): distance of the closest golden token (-1 if no golden token is detected)
 	rot_y (float): angle between the robot and the golden token (-1 if no golden token is detected)
+    id (int): id of the token
     """
     dist=100
     for token in R.see():
